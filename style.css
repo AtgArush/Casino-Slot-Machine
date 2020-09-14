@@ -1,0 +1,119 @@
+:root{
+    --speed: 5;
+}
+
+body{
+    background-color: coral;
+}
+.machine{
+    background-color: chocolate;
+    border: dashed darkred 5px;
+    height: 45vh;
+    width: 70vw;
+    margin: 15vh 14vw 5vh 14vw;
+    display: flex;
+    z-index: 5;
+}
+
+#inpSpeed{
+    font-size: 30pt;
+    margin: 20px;
+    margin-left: 14vw;
+}
+
+.slot{
+    z-index: 1;
+    height: 35vh;
+    margin:2vw;
+    overflow: hidden;
+    width: 28vw;
+    background-color: gainsboro;
+    border: solid purple 2px;
+    text-align: center;
+    font-size: 14vw;
+    line-height: 35vh;   
+}
+
+.slot .value{
+    z-index: 3;
+}
+
+.animations{
+    animation-name: slotspin;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: cubic-bezier(0,.8,.13,.68); */
+    /* animation-duration: calc(1s / var(--speed)); */
+    /* animation-duration: 01.5s; */
+    animation-duration: 4s;
+}
+
+.toggleButton{
+    margin-left: 40vw;
+    width: 20vw;
+    height: 10vw;
+    font-size: larger;
+    background-color: brown;
+    border-radius: 50px;
+}
+
+
+@keyframes slotspin {
+    0%{
+        transform: translateY(-35vh);
+    }
+    2%{
+        transform: translateY(+35vh);
+    }
+    4%{
+        transform: translateY(-35vh);
+    }
+    6%{
+        transform: translateY(+35vh);
+    }
+    8%{
+        transform: translateY(-35vh);
+    }
+    10%{
+        transform: translateY(+35vh);
+    }
+    13%{
+        transform: translateY(-35vh);
+    }
+    16%{
+        transform: translateY(+35vh);
+    }
+    19%{
+        transform: translateY(-35vh);
+    }
+    22%{
+        transform: translateY(+35vh);
+    }
+    27%{
+        transform: translateY(-35vh);
+    }
+    33%{
+        transform: translateY(+35vh);
+    }
+    40%{
+        transform: translateY(-35vh);
+    }
+    48%{
+        transform: translateY(+35vh);
+    }
+    56%{
+        transform: translateY(-35vh);
+    }
+    66%{
+        transform: translateY(+35vh);
+    }
+    76%{
+        transform: translateY(-35vh);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+
